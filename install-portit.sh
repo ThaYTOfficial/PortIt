@@ -11,7 +11,7 @@ if ! command -v node >/dev/null 2>&1; then
   fi
 fi
 PORTIT_PATH="/usr/local/bin/portit"
-sudo curl -fsSL -o "$PORTIT_PATH" https://your-server.com/portit.js
+sudo curl -fsSL -o "$PORTIT_PATH" https://github.com/ThaYTOfficial/PortIt/raw/refs/heads/main/portit.js
 sudo chmod +x "$PORTIT_PATH"
 
 # Add shebang if missing

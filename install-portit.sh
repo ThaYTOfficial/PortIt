@@ -1,10 +1,8 @@
 #!/bin/bash
 set -e
 
-# Check for Node.js
 if ! command -v node >/dev/null 2>&1; then
   echo "Node.js is required. Installing Node.js..."
-  # Try to install Node.js (Debian/Ubuntu)
   if command -v apt >/dev/null 2>&1; then
     sudo apt update && sudo apt install -y nodejs npm
   else
@@ -12,8 +10,6 @@ if ! command -v node >/dev/null 2>&1; then
     exit 1
   fi
 fi
-
-# Download portit.js
 PORTIT_PATH="/usr/local/bin/portit"
 sudo curl -fsSL -o "$PORTIT_PATH" https://your-server.com/portit.js
 sudo chmod +x "$PORTIT_PATH"

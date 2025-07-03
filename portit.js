@@ -5,7 +5,7 @@ const net = require('net');
 const fs = require('fs');
 const path = require('path');
 
-const VPS_IP = '127.0.0.1'; // Change to your VPS IP
+const VPS_IP = '5.254.6.149';
 const WS_PORT = 7000;
 const FORWARDS_FILE = path.join(require('os').homedir(), '.portit-forwards.json');
 
